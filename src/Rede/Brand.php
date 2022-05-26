@@ -30,6 +30,11 @@ class Brand
     }
 
     /**
+     * @var string
+     */
+    private $authorizationCode;
+
+    /**
      * @param string $name
      *
      * @return Brand
@@ -78,5 +83,22 @@ class Brand
         return $this;
     }
 
+    /**
+     * @param string $authorizationCode
+     *
+     * @return Brand
+     */
+    public function setAuthorizationCode(string $authorizationCode): Brand
+    {
+        $this->authorizationCode = $authorizationCode;
+        return $this;
+    }
 
+    /**
+     * @return string
+     */
+    public function getAuthorizationCode(): string
+    {
+        return $this->authorizationCode;
+    }
 }
